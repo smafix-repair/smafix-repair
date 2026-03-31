@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smafix Repair - Produits</title>
+  <meta name="description" content="Téléphones neufs et d’occasion, PC, écrans et accessoires chez Smafix Repair." />
+  <meta name="theme-color" content="#0F5BDC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-content">
+      <span>Arrivages • Vente • Reprise • Recherche produit</span>
+      <a href="mailto:repairsmafix@gmail.com">repairsmafix@gmail.com</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html#accueil" class="brand" aria-label="Smafix Repair accueil">
+        <img src="logo.png" alt="Logo Smafix Repair" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">Smafix</span>
+          <span class="logo-sub">Repair</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="produits.html">Produits</a></li>
+          <li><a href="#telephones-neufs">Téléphones neufs</a></li>
+          <li><a href="#telephones-occasion">Occasion</a></li>
+          <li><a href="#informatique">Informatique</a></li>
+          <li><a href="#contact-produit">Contact</a></li>
+        </ul>
+        <a href="#contact-produit" class="btn btn-primary nav-cta">Demander un produit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="products-hero-apple">
+      <div class="container products-hero-apple-grid">
+        <div class="products-hero-apple-copy reveal">
+          <p class="eyebrow">Catalogue premium</p>
+          <h1>Téléphones, PC et accessoires bien présentés.</h1>
+          <p class="products-hero-apple-text">
+            Un catalogue plus simple, plus visuel et plus premium pour aider le client à trouver rapidement le bon produit.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#telephones-neufs" class="btn btn-primary">Voir les téléphones</a>
+            <a href="#informatique" class="btn btn-secondary">Voir le reste</a>
+          </div>
+        </div>
+
+        <div class="products-hero-apple-visual reveal delay-1">
+          <div class="hero-glass-card-large">
+            <span class="hero-floating-badge">Meilleur choix</span>
+            <div class="hero-device-stack">
+              <div class="hero-phone hero-phone-back"></div>
+              <div class="hero-phone hero-phone-front"></div>
+            </div>
+            <div class="hero-card-content">
+              <h3>Simple à parcourir</h3>
+              <p>Neuf, occasion, grades, détails et images.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-stats-section">
+      <div class="container stats-grid">
+        <article class="stat-card reveal">
+          <strong class="counter" data-target="250">0</strong>
+          <span>réparations réalisées</span>
+        </article>
+        <article class="stat-card reveal delay-1">
+          <strong class="counter" data-target="40">0</strong>
+          <span>produits recherchés chaque mois</span>
+        </article>
+        <article class="stat-card reveal delay-2">
+          <strong class="counter" data-target="24">0</strong>
+          <span>réponse rapide en général</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop-section" id="telephones-neufs">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p>Téléphones neufs</p>
+          <h2>iPhone et Android récents</h2>
+        </div>
+        <div class="chip-toolbar reveal">
+          <div class="chip-group" id="newPhoneBrandFilters">
+            <button class="filter-chip active" data-filter="all">Tous</button>
+            <button class="filter-chip" data-filter="iphone">iPhone</button>
+            <button class="filter-chip" data-filter="android">Android</button>
+          </div>
+        </div>
+        <div id="newPhonesGrid" class="apple-products-grid reveal"></div>
+      </div>
+    </section>
+
+    <section class="shop-section section-alt" id="telephones-occasion">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p>Téléphones d’occasion</p>
+          <h2>Tri par marque et par grade</h2>
+        </div>
+        <div class="chip-toolbar reveal chip-toolbar-double">
+          <div class="chip-group" id="usedPhoneBrandFilters">
+            <button class="filter-chip active" data-filter="all">Tous</button>
+            <button class="filter-chip" data-filter="iphone">iPhone</button>
+            <button class="filter-chip" data-filter="android">Android</button>
+          </div>
+          <div class="chip-group" id="usedPhoneGradeFilters">
+            <button class="filter-chip active" data-grade="all">Tous grades</button>
+            <button class="filter-chip grade-a" data-grade="A">Grade A</button>
+            <button class="filter-chip grade-b" data-grade="B">Grade B</button>
+            <button class="filter-chip grade-c" data-grade="C">Grade C</button>
+          </div>
+        </div>
+        <div id="usedPhonesGrid" class="apple-products-grid reveal"></div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="informatique">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p>PC & écrans</p>
+          <h2>Informatique actuelle</h2>
+        </div>
+
+        <div class="subsection-head reveal"><h3>PC</h3></div>
+        <div id="pcGrid" class="apple-products-grid reveal"></div>
+
+        <div class="subsection-head reveal" style="margin-top:40px;"><h3>Écrans</h3></div>
+        <div id="screenGrid" class="apple-products-grid reveal"></div>
+
+        <div class="subsection-head reveal" style="margin-top:40px;"><h3>Accessoires</h3></div>
+        <div id="accessoryGrid" class="apple-products-grid reveal"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-produit">
+      <div class="container contact-grid">
+        <div class="contact-text-block reveal">
+          <div class="section-heading left">
+            <p>Contact produit</p>
+            <h2>Demander un produit ou une reprise</h2>
+          </div>
+
+          <div class="contact-details">
+            <a href="tel:+33656899437"><strong>Téléphone :</strong> 06 56 89 94 37</a>
+            <a href="mailto:repairsmafix@gmail.com"><strong>Email :</strong> repairsmafix@gmail.com</a>
+            <p><strong>Disponibilité :</strong> Réponse rapide selon demande</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal delay-1" id="contactForm" action="https://formspree.io/f/xlgpogeg" method="POST">
+          <div class="form-row">
+            <input type="text" name="nom" placeholder="Votre nom" required />
+            <input type="tel" name="telephone" placeholder="Votre numéro" required />
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" placeholder="Votre email" required />
+            <select name="type_demande" required>
+              <option value="">Choisir une demande</option>
+              <option>Recherche iPhone</option>
+              <option>Recherche smartphone Android</option>
+              <option>Recherche PC</option>
+              <option>Recherche écran</option>
+              <option>Recherche accessoire</option>
+              <option>Reprise téléphone</option>
+              <option>Reprise matériel informatique</option>
+            </select>
+          </div>
+          <input type="text" name="modele" placeholder="Modèle recherché ou produit à reprendre" />
+          <textarea name="message" placeholder="Décrivez votre besoin, l’état du produit ou votre budget" required></textarea>
+
+          <input type="hidden" name="_subject" value="Nouvelle demande produit depuis Smafix Repair" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="product-modal-overlay" id="productModalOverlay"></div>
+    <div class="product-modal-card">
+      <button class="product-modal-close" id="productModalClose" aria-label="Fermer">×</button>
+
+      <div class="product-modal-grid">
+        <div class="product-modal-gallery">
+          <img id="modalMainImage" src="" alt="Produit" class="modal-main-image" />
+          <div id="modalThumbs" class="modal-thumbs"></div>
+        </div>
+
+        <div class="product-modal-content">
+          <div class="modal-top-row">
+            <span id="modalBadge" class="modal-badge">Produit</span>
+            <span id="modalStatus" class="modal-status">Disponible</span>
+          </div>
+
+          <h3 id="modalTitle">Nom produit</h3>
+          <p id="modalDescription" class="modal-description">Description</p>
+
+          <div class="modal-meta">
+            <span id="modalCategory">Catégorie</span>
+            <span id="modalType">Type</span>
+            <span id="modalGrade">Grade</span>
+            <span id="modalYear">Année</span>
+          </div>
+
+          <ul id="modalDetails" class="modal-details"></ul>
+
+          <div class="modal-price-row">
+            <strong id="modalPrice">0 €</strong>
+            <a href="#contact-produit" class="btn btn-primary" id="modalCta">Demander ce produit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/33656899437" class="whatsapp-btn" target="_blank" aria-label="Contacter sur WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
